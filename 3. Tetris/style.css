@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: rgb(241, 248, 255);
+  background-image: url(https://cdn.pixabay.com/photo/2018/05/18/12/43/style-3411108_1920.jpg);
+}
+
+#game {
+  padding-top: 20px;
+  font-family: tetris-font;
+  font-size: 30px;
+  width: 320px;
+  margin: auto;
+}
+
+.main {
+  width: 320px;
+  height: 500px;
+  margin: 20px auto 0;
+  border: 10px solid rgb(190, 190, 190);
+  font-size: 0;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(190, 190, 190);
+  display: inline-block;
+}
+
+.movingCell {
+  background-color: rgb(255, 255, 255);
+}
+
+.fixedCell {
+  background-color: rgb(101, 117, 121);
+}
+
+#next-tetro {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  font-size: 0;
+}
+
+#game-over {
+  font-family: tetris-font;
+  font-size: 100px;
+  color: rgb(124, 0, 0);
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face{
+  font-family: tetris-font;
+  src: url('Orbitron-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+ }

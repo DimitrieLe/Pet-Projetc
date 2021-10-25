@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2018/09/30/22/52/mathematical-3714907_960_720.png">
+ <title>Web Calc</title>
+</head>
+<body>
+ <div class="calc">
+  <div class="output">
+   <input class="final-result" type="text" readonly>
+  </div>
+  <div class="buttons">
+   <table>
+    <tr>
+     <td onclick="reset()">C</td>
+     <td onclick="backspace()"><</td>
+     <td onclick="input('*')">X</td>
+     <td onclick="input('/')">/</td>
+    </tr>
+    <tr>
+     <td onclick="input('1')">1</td>
+     <td onclick="input('2')">2</td>
+     <td onclick="input('3')">3</td>
+     <td onclick="input('+')">+</td>
+    </tr>
+    <tr>
+     <td onclick="input('4')">4</td>
+     <td onclick="input('5')">5</td>
+     <td onclick="input('6')">6</td>
+     <td onclick="input('-')">-</td>
+    </tr>
+    <tr>
+     <td onclick="input('7')">7</td>
+     <td onclick="input('8')">8</td>
+     <td onclick="input('9')">9</td>
+     <td rowspan="2" onclick="result()">=</td>
+
+     <tr>
+      <td colspan="2" onclick="input('0')">0</td>
+      <td onclick="input('.')">.</td>
+     </tr>
+    </tr>
+   </table>
+  </div>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>

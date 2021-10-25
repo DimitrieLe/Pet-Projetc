@@ -1,0 +1,47 @@
+body{
+ background-image: url(https://www.oxford.anglican.org/wp-content/uploads/2019/12/c81455c2aa35fbcc0f006289dea2f430.jpg);
+}
+
+.calc{
+ border: 2px solid black;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translateX(-50%) translateY(-50%);
+ padding: 50px;
+ font-family: 'Calc-font';
+ background: rgb(127, 223, 226);
+ border-radius: 20px;
+}
+td{
+ min-width: 40px;
+ padding: 20px;
+ text-align: center;
+ background: rgb(78, 78, 78);
+ color: rgb(231, 231, 231);
+ border-radius: 15px;
+ border: 1px solid black;
+ cursor: pointer;
+}
+td:hover{
+ background: #616161;
+ border: 1px solid #ffffff;
+}
+.final-result{
+ text-align: right;
+ font-family: 'Calc-font';
+ width: 296px;
+ padding: 20px;
+ font-size: 35px;
+ border-radius: 15px;
+ border: 1px solid black;
+ outline: none;
+ background: rgb(221, 247, 247);
+}
+
+@font-face{
+ font-family: Calc-font;
+ src: url('Quicksand-VariableFont_wght.ttf');
+ font-weight: normal;
+ font-style: normal;
+}
